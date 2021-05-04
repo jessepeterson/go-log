@@ -1,5 +1,8 @@
 package log
 
+// Pacakge log is embedded (not imported) from:
+// https://github.com/jessepeterson/go-log
+
 // nopLogger does nothing
 type nopLogger struct{}
 

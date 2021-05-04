@@ -1,5 +1,8 @@
 package log
 
+// Pacakge log is embedded (not imported) from:
+// https://github.com/jessepeterson/go-log
+
 // DefaultLogger is the default Logger used by the package funcs
 var DefaultLogger Logger = NopLogger
 
