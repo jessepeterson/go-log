@@ -27,11 +27,12 @@ Bar, too, use a third party logging project called AllTheLogs. But your
 project already has a different logging project. So in order to use
 Bar unmodified and log to your existing logger you would either have to
 use AllTheLogs logger or adapt its interfaces to plug into your existing
-logger. Not ideal in either case.
+logger (assuming Bar even exposes its logging at all). Not ideal in
+either case.
 
 While it's true that we're just inventing another abstraction here the
-thought is that the super simple interface makes this the process of
-adapting log frameworks much much simpler.
+thought is that the super simple interface makes the process of
+adapting log frameworks much simpler.
 
 Embed, Not Import
 
@@ -44,8 +45,8 @@ Dependency Problem. In this way a third party user of your package does
 not need to commit to your logging project of choice.
 
 By embedding this logging interface we can come close to achieving our
-main goals here: a tiny limited scope (but featureful) interface, and 
-no third party dependencies for our shareable packages.
+main goals here: a tiny, limited-in-scope (but featureful) interface,
+and no third party dependencies for our shareable packages.
 
 Actually Logging
 
